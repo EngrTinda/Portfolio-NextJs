@@ -14,16 +14,12 @@ import 'aos/dist/aos.css';
 
 const Home = () => {
   useEffect(() => {
-    const initAOS = async () => {
-      await import('aos')
-      AOS.init({
-        duration: 1000, // Animation duration
-        easing: 'ease',
-        once: true, // Whether animation should happen only once - while scrolling down
-        anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
-      });
-    };
-    initAOS();
+    AOS.init({
+      duration: 1000,
+      easing: "ease",
+      once: true,
+      anchorPlacement: "top-bottom",
+    });
   }, []);
 
   return (
